@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Music n' Stuff</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Euphoria+Script" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <!-- HEADER & NAV -->
+        <header>
+            <div class="header-img" id="theHeader">
+                <div class="logotext"><a href="index.html" id="siteLogo"><p class="logotext">Music n' Stuff</p></a></div>
+                <nav id="nav">
+                    <div id="search-field">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" id="name" placeholder="search for artists, playlists or tracks">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="text-or">or</div>
+
+                    <div id="submit-new">
+                        <button type="submit" class="btn btn-lg btn-success" id="btnSubmit">Submit new</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main id="main">
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="btnClose">&times;</span>
+                    <h2>What do you want to submit?</h2>
+                    <button class="btn btn-success" id="btnSubmitArtist">Artist</button>
+                    <button class="btn btn-success" id="btnSubmitSong">Song</button>
+                    <button class="btn btn-success" id="btnSubmitAlbum">Album</button>
+                    <button class="btn btn-success" id="btnSubmitPlaylist">Playlist</button>
+                </div>
+
+            </div>
+
+            <section class="artists">
+                <h1>Latest Artists</h1>
+                <div id="displayAllArtists"></div>
+            </section>
+
+            <section class="playlists">
+                <h1>Top Rated Playlists</h1>
+                <div id="displayAllPlaylists"></div>
+            </section>
+
+            <section class="albums">
+                <h1>Latest Albums</h1>
+                <div id="displayAllAlbums"></div>
+            </section>
+            
+            <section class="tracks">
+                <h1>Latest Tracks</h1>
+                <div id="displayAllTracks"></div>
+            </section>  
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <section class="footer-content">
+               <a class="footer-txt" href="http://github.com/niclasv/whatdevs_musikinstitutet" target="_blank"><i class="fab fa-github-square fa-2x"></i><br> Whatdevs_Musikinstitutet</a>
+            </section>
+        </footer>
+    </body>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+
+</html>
